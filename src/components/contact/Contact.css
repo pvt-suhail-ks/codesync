@@ -1,0 +1,95 @@
+/* Contact.css */
+.contact-container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 4rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.left-sec {
+    flex: 1;
+    min-width: 300px;
+}
+
+.contact-us {
+    color: #7a0dff;
+    text-decoration: underline;
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    margin-bottom: 1.5rem;
+}
+
+.right-sec {
+    flex: 1;
+    min-width: 300px;
+}
+
+.lets-talk {
+    font-size: clamp(1.8rem, 5vw, 3rem);
+    margin-bottom: 1rem;
+}
+
+.right-sec p {
+    font-size: clamp(0.9rem, 2.5vw, 1.25rem);
+    color: gray;
+    line-height: 1.6;
+}
+
+.contact-list {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: clamp(0.75rem, 2vw, 1rem);
+}
+
+.contact-list li {
+    display: flex;
+    align-items: center;
+    gap: clamp(0.5rem, 1.5vw, 0.75rem);
+    color: white;
+    font-size: clamp(0.85rem, 2vw, 1rem);
+}
+
+.contact-list img {
+    width: clamp(20px, 4vw, 30px);
+    height: clamp(20px, 4vw, 30px);
+    filter: drop-shadow(0 0 5px #3b82f6);
+}
+
+.contact-list span {
+    color: white;
+}
+
+.contact-list strong {
+    color: #a855f7;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .contact-container {
+        padding: 2rem 0.75rem;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .desktop-br {
+        display: none;
+    }
+    
+    .left-sec, .right-sec {
+        width: 100%;
+        max-width: 500px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .contact-container {
+        padding: 1.5rem 0.5rem;
+    }
+}
